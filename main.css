@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #f8f8f8;
-    background-image: url('your-guitar-photo.jpg'); /* Fixed background */
+    background-image: url(https://github.com/erra0284/lc-repository/blob/main/your-guitar-photo.jpeg.jpg); /* Fixed background */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
