@@ -3,49 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover the sound of your next favorite artist">
-    <title>Your Artist Name</title>
+    <title>LotusCurry</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#music">Music</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section id="home" class="fullscreen">
-            <div class="overlay">
-                <h1>Your Artist Name</h1>
-                <p>Discover the sound of your next favorite artist</p>
-            </div>
-        </section>
+    <!-- Background Image Upload -->
+    <div class="background">
+        <input type="file" id="bgUpload" accept="image/*" hidden>
+        <label for="bgUpload" class="upload-btn">Upload Background</label>
+    </div>
 
-        <section id="about">
-            <h2>About</h2>
-            <p>Brief bio and description about your music journey and style.</p>
-        </section>
+    <!-- Logo Upload -->
+    <div class="logo-container">
+        <input type="file" id="logoUpload" accept="image/*" hidden>
+        <label for="logoUpload" class="upload-logo-btn">Upload Logo</label>
+        <img id="logo" src="default-logo.png" alt="Your Logo">
+    </div>
 
-        <section id="music">
-            <h2>Music</h2>
-            <p>Embed your music player or link to platforms like Spotify, YouTube, etc.</p>
-        </section>
+    <!-- Main Content -->
+    <div class="content">
+        <h1>Your Artist Name</h1>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Your Artist Name</p>
-    </footer>
+        <!-- Social Media Links -->
+        <div class="social-links">
+            <a href="https://www.instagram.com/lotuscurry/" target="_blank">Instagram</a>
+            <a href="https://www.tiktok.com/@lotuscurry" target="_blank">TikTok</a>
+            <a href="https://www.youtube.com/@erikdoesnirvana" target="_blank">YouTube</a>
+            <a href="https://soundcloud.com/lotus-curry-768763312" target="_blank">SoundCloud</a>
+            <a href="https://www.patreon.com/c/lotuscurry/shop" target="_blank">Patreon</a>
+        </div>
+        <!-- Email Subscription Form -->
+        <div class="subscribe-box">
+            <form action="http://eepurl.com/jbxafI" method="post" target="_blank">
+                <input type="email" name="EMAIL" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
