@@ -1,11 +1,12 @@
-/* General Styling */
+* General Styling */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #f8f8f8;
-    background-image: url('your-guitar-photo.jpg'); /* Replace Nasri’s photo */
+    background-image: url('your-guitar-photo.jpg'); /* Fixed background */
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 /* Logo Styling */
@@ -13,11 +14,11 @@ body {
     width: 150px; /* Adjust size as needed */
     height: auto;
     display: block;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 #logo {
-    content: url('your-logo.jpg'); /* Replace crane logo */
+    content: url('your-logo.jpg'); /* Fixed logo */
     width: 120px; /* Adjust as needed */
     height: auto;
 }
@@ -46,6 +47,7 @@ body {
     transition: 0.3s;
     display: inline-block;
     text-decoration: none;
+    margin-top: 20px;
 }
 
 .store-link:hover {
