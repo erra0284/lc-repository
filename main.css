@@ -1,100 +1,83 @@
-:root {
-    --primary-color: #fff;
-    --background-color: #000;
-    --overlay-color: rgba(0, 0, 0, 0.5);
-    --hover-color: #f0f0f0;
-    --font-family: Arial, sans-serif;
-    --font-size-large: 3rem;
-    --font-size-medium: 1.5rem;
-    --font-size-small: 18px;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* General Styling */
 body {
-    font-family: var(--font-family);
-    color: var(--primary-color);
-    background-color: var(--background-color);
-    line-height: 1.6;
-}
-
-header, nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: var(--overlay-color);
-    padding: 10px 0;
-    z-index: 1000;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-}
-
-nav ul li {
-    margin: 0 20px;
-}
-
-nav ul li a {
-    color: var(--primary-color);
-    text-decoration: none;
-    font-size: var(--font-size-small);
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: var(--hover-color);
-}
-
-.fullscreen {
-    background: url('your-image.jpg') center/cover no-repeat;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-family: Arial, sans-serif;
     text-align: center;
+    background-color: #f8f8f8;
+    background-image: url('your-guitar-photo.jpg'); /* Replace Nasri’s photo */
+    background-size: cover;
+    background-position: center;
 }
 
-.overlay {
-    background: var(--overlay-color);
+/* Logo Styling */
+.logo {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#logo {
+    content: url('your-logo.jpg'); /* Replace crane logo */
+    width: 120px; /* Adjust as needed */
+    height: auto;
+}
+
+/* Social Links */
+.social-links a {
+    display: inline-block;
+    margin: 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.social-links a:hover {
+    color: #ff4500;
+}
+
+/* Store (Patreon) Button */
+.store-link {
+    background: #ff4500;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.store-link:hover {
+    background: #cc3700;
+}
+
+/* Email Subscription Box */
+.subscribe-box {
+    background: white;
     padding: 20px;
     border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    display: inline-block;
 }
 
-h1 {
-    font-size: var(--font-size-large);
+.subscribe-box input[type="email"] {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-p {
-    font-size: var(--font-size-medium);
+.subscribe-box button {
+    padding: 10px 15px;
+    border: none;
+    background: #ff4500;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-section {
-    padding: 50px 20px;
-    text-align: center;
-}
-
-footer {
-    background: #333;
-    color: var(--primary-color);
-    padding: 20px 0;
-    text-align: center;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    .fullscreen {
-        height: 50vh;
-    }
+.subscribe-box button:hover {
+    background: #cc3700;
 }
