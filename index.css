@@ -1,0 +1,85 @@
+* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f8f8;
+    background-image: url(https://github.com/erra0284/lc-repository/blob/main/your-guitar-photo.jpeg.jpg); /* Fixed background */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Logo Styling */
+.logo {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+#logo {
+    content: url('your-logo.jpg'); /* Fixed logo */
+    width: 120px; /* Adjust as needed */
+    height: auto;
+}
+
+/* Social Links */
+.social-links a {
+    display: inline-block;
+    margin: 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.social-links a:hover {
+    color: #ff4500;
+}
+
+/* Store (Patreon) Button */
+.store-link {
+    background: #ff4500;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.store-link:hover {
+    background: #cc3700;
+}
+
+/* Email Subscription Box */
+.subscribe-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.subscribe-box input[type="email"] {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.subscribe-box button {
+    padding: 10px 15px;
+    border: none;
+    background: #ff4500;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.subscribe-box button:hover {
+    background: #cc3700;
+}
