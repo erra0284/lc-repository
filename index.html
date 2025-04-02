@@ -1,134 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOtusCuRRY</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOtusCuRRY</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8f8f8;
+            background-image: url('https://github.com/erra0284/lc-repository/blob/main/your-guitar-photo.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* Logo Styling */
+        .logo {
+            width: 150px;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        #logo {
+            width: 120px;
+            height: auto;
+        }
+
+        /* Social Links */
+        .social-links a {
+            display: inline-block;
+            margin: 10px;
+            color: #333;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .social-links a:hover {
+            color: #ff4500;
+        }
+
+        /* Store (Patreon) Button */
+        .store-link {
+            background: #ff4500;
+            padding: 10px 15px;
+            border-radius: 5px;
+            color: white !important;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: 0.3s;
+            display: inline-block;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        .store-link:hover {
+            background: #cc3700;
+        }
+
+        /* Email Subscription Box */
+        .subscribe-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        .subscribe-box input[type="email"] {
+            padding: 10px;
+            width: 250px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .subscribe-box button {
+            padding: 10px 15px;
+            border: none;
+            background: #ff4500;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .subscribe-box button:hover {
+            background: #cc3700;
+        }
+    </style>
 </head>
-  <script>
-    // Your JavaScript code here console.log (// Set the background image (Your Guitar Photo)
-document.body.style.backgroundImage = "url('https://github.com/erra0284/lc-repository/blob/main/your-guitar-photo.jpg')";
+<body>
+    <!-- Logo -->
+    <img id="logo" class="logo" src="https://github.com/erra0284/lc-repository/blob/main/your-logo.jpg" alt="Your Logo" />
 
-// Set the logo image (https://github.com/erra0284/lc-repository/blob/main/your-logo.jpg)
-document.getElementById('logo').src = ("https://github.com/erra0284/lc-repository/blob/main/your-logo.jpg";)
+    <!-- Social Media Links -->
+    <div class="social-links">
+        <a href="https://www.instagram.com/lotuscurry/" target="_blank">Instagram</a>
+        <a href="https://www.tiktok.com/@lotuscurry" target="_blank">TikTok</a>
+        <a href="https://soundcloud.com/lotus-curry-768763312" target="_blank">SoundCloud</a>
+        <a href="https://www.youtube.com/@erikdoesnirvana" target="_blank">YouTube</a>
+    </div>
 
-// Function to open the Patreon Store
-document.getElementById('storeButton').addEventListener('click', function() {
-    window.open('https://patreon.com/yourpatreon', '_blank');
-}););
-  </script>
-<style>
-  body{ * General Styling */
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f8f8f8;
-    background-image: url(https://github.com/erra0284/lc-repository/blob/main/your-guitar-photo.jpeg.jpg); /* Fixed background */
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
+    <!-- Store (Patreon) Button -->
+    <a href="https://www.patreon.com/c/lotuscurry/shop" target="_blank" class="store-link">Visit My Store</a>
 
-/* Logo Styling */
-.logo {
-    width: 150px; 
-    height: auto;
-    display: block;
-    margin: 20px auto;
-}
+    <!-- Email Subscription Box (Mailchimp) -->
+    <div class="subscribe-box">
+        <form action="http://eepurl.com/jbxafI" method="post">
+            <input type="email" name="EMAIL" placeholder="Enter your email" required />
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
 
-#logo {
-    content: url('https://github.com/erra0284/lc-repository/blob/main/your-logo.jpg'); /* Fixed logo */
-    width: 120px; 
-    height: auto;
-}
+    <script>
+        // Set the background image (Your Guitar Photo)
+        document.body.style.backgroundImage = "url('https://github.com/erra0284/lc-repository/blob/main/your-guitar-photo.jpg')";
 
-/* Social Links */
-.social-links a {
-    display: inline-block;
-    margin: 10px;
-    color: #333;
-    text-decoration: none;
-    font-size: 16px;
-}
+        // Set the logo image
+        document.getElementById('logo').src = "https://github.com/erra0284/lc-repository/blob/main/your-logo.jpg";
 
-.social-links a:hover {
-    color: #ff4500;
-}
-
-/* Store (Patreon) Button */
-.store-link {
-    background: #ff4500;
-    padding: 10px 15px;
-    border-radius: 5px;
-    color: white !important;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: 0.3s;
-    display: inline-block;
-    text-decoration: none;
-    margin-top: 20px;
-}
-
-.store-link:hover {
-    background: #cc3700;
-}
-
-/* Email Subscription Box */
-.subscribe-box {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-    display: inline-block;
-}
-
-.subscribe-box input[type="email"] {
-    padding: 10px;
-    width: 250px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.subscribe-box button {
-    padding: 10px 15px;
-    border: none;
-    background: #ff4500;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.subscribe-box button:hover {
-    background: #cc3700;
-}
-       </style>
-    </head>
-
-    <!-- Logo -->
-    <img id="logo" class="logo" src="https://github.com/erra0284/lc-repository/blob/main/your-logo.jpg.png" alt="Your Logo">
-
-    <!-- Social Media Links -->
-    <div class="social-links">
-        <a href="https://www.instagram.com/lotuscurry/" target="_blank">Instagram</a>
-        <a href="https://www.tiktok.com/@lotuscurry" target="_blank">TikTok</a>
-        <a href="https://soundcloud.com/lotus-curry-768763312" target="_blank">SoundCloud</a>
-        <a href="https://www.youtube.com/@erikdoesnirvana" target="_blank">YouTube</a>
-    </div>
-
-    <!-- Store (Patreon) Button -->
-    <a href="https://www.patreon.com/c/lotuscurry/shop" target="_blank" class="store-link">Visit My Store</a>
-
-    <!-- Email Subscription Box (Mailchimp) -->
-    <div class="subscribe-box">
-        <form action="http://eepurl.com/jbxafI" method="post">
-            <input type="email" name="EMAIL" placeholder="Enter your email" required>
-            <button type="submit">Subscribe</button>
-        </form>
-    </div>
-
-    <script src="script.js"></script>
+        // Function to open the Patreon Store
+        document.getElementById('storeButton').addEventListener('click', function() {
+            window.open('https://patreon.com/yourpatreon', '_blank');
+        });
+    </script>
 </body>
 </html>
